@@ -91,12 +91,7 @@ Dark and light themes with custom glass-style overrides
 Chatroom create/delete and search with debouncing
 
 
-## Screenshots:
 
-<img width="1920" height="1080" alt="Screenshot_2025_08_14-4" src="https://github.com/user-attachments/assets/3cb4c290-fa6d-4cae-a5bf-67c0b4875430" />
-<img width="1920" height="1080" alt="Screenshot_2025_08_14-3" src="https://github.com/user-attachments/assets/866b6fe2-b477-4d79-8b52-9243e734c420" />
-<img width="1920" height="1080" alt="Screenshot_2025_08_14-2" src="https://github.com/user-attachments/assets/b2e6edcc-485d-4e68-83a3-0092968a93cf" />
-<img width="1920" height="1080" alt="Screenshot_2025_08_14-1" src="https://github.com/user-attachments/assets/3179ec76-c742-446d-ab44-cbedf01b7005" />
 
 
 
