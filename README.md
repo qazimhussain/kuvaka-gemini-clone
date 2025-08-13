@@ -1,7 +1,7 @@
 # ​ Kuvaka Gemini Clone
 
 A **modern Gemini AI chat clone** built with React (Vite), TailwindCSS v4, Redux, and more!  
-**Live Demo:** [https://kuvaka-gemini-clone.vercel.app/dashboard](https://kuvaka-gemini-clone.vercel.app/dashboard)
+**Live Demo:** [https://kuvaka-gemini-clone.vercel.app](https://kuvaka-gemini-clone.vercel.app)
 
 ---
 
