@@ -1,12 +1,104 @@
-# React + Vite
+# ​ Kuvaka Gemini Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **modern Gemini AI chat clone** built with React (Vite), TailwindCSS v4, Redux, and more!  
+**Live Demo:** [https://kuvaka-gemini-clone.vercel.app/dashboard](https://kuvaka-gemini-clone.vercel.app/dashboard)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Project Overview
 
-## Expanding the ESLint configuration
+An interactive AI chat simulator with a luxurious glassmorphic UI, featuring:
+- OTP login with country code and validation
+- Chatroom creation, search, and deletion
+- AI-simulated replies with simulated 'typing...' indicator
+- Infinite scroll, reverse pagination, and throttling
+- Image uploads, copy-to-clipboard, and dark/light mode
+- Responsive layout designed with modern aesthetics
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+##  Setup & Run Instructions
+
+Clone the project:
+```bash
+git clone https://github.com/your-username/kuvaka-gemini-clone.git
+cd kuvaka-gemini-clone
+
+Install dependencies:
+npm install
+
+Run dev server:
+npm run dev
+
+##  Folder & Component Structure
+
+src/
+├── assets/ # Static assets like logos, SVGs
+│ └── react.svg
+│
+├── components/ # Reusable UI components
+│ └── NavBar.jsx
+│
+├── features/ # Redux slices for state management
+│ ├── auth/
+│ │ └── authSlice.js # Authentication state & actions
+│ ├── chat/
+│ │ └── chatSlice.js # Chat messages state
+│ └── theme/
+│ └── themeSlice.js # Dark/Light theme state
+│
+├── pages/ # Main pages
+│ ├── ChatRoom.jsx # Chatroom page with messages
+│ ├── Dashboard.jsx # Chatrooms list and navigation
+│ └── Login.jsx # OTP login page
+│
+├── store/ # Redux store setup
+│ ├── chatroomsSlice.js # Chatrooms state & CRUD logic
+│ └── store.js
+│
+├── styles/ # Global styles
+│ └── index.css
+│
+├── utils/ # Helper functions
+│ ├── formatDate.js # Format timestamps
+│ └── persistor.js # Redux persist configuration
+│
+├── App.jsx # Main app component with routes
+├── index.jsx # React entry point
+└── tailwind.config.js # Tailwind configuration
+
+
+##  Implementation Details
+
+Throttling:
+Simulates AI typing with controlled timeouts
+Ensures responses are delayed appropriately to look natural
+
+Pagination & Infinite Scroll:
+Messages load in reverse via Redux prependMessages
+Scroll to top triggers older message loading without jump
+
+Form Validation:
+Login form validated using React Hook Form + Zod
+Country selection and phone number input MUST be valid
+
+Image Upload Persistence:
+Images are converted to Base64 via FileReader for persistence even after app reloads
+
+Additional Features:
+Copy any message to clipboard
+Dark and light themes with custom glass-style overrides
+Chatroom create/delete and search with debouncing
+
+
+## Screenshots:
+
+<img width="1920" height="1080" alt="Screenshot_2025_08_14-4" src="https://github.com/user-attachments/assets/3cb4c290-fa6d-4cae-a5bf-67c0b4875430" />
+<img width="1920" height="1080" alt="Screenshot_2025_08_14-3" src="https://github.com/user-attachments/assets/866b6fe2-b477-4d79-8b52-9243e734c420" />
+<img width="1920" height="1080" alt="Screenshot_2025_08_14-2" src="https://github.com/user-attachments/assets/b2e6edcc-485d-4e68-83a3-0092968a93cf" />
+<img width="1920" height="1080" alt="Screenshot_2025_08_14-1" src="https://github.com/user-attachments/assets/3179ec76-c742-446d-ab44-cbedf01b7005" />
+
+
+
+
+
